@@ -1,0 +1,16 @@
+%sidbar-aling{
+    vertical-align: middle;
+}
+
+%sidbar-font{
+    font-size: 18px;
+    padding: $sidbar-padding 0;
+    overflow: hidden;
+}
+
+%sidbar-nav{
+    font-size: 14px;
+    vertical-align: middle;
+    overflow: hidden;
+    display: inline-block;
+}

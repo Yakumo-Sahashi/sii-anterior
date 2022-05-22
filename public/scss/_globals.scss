@@ -1,0 +1,187 @@
+*,
+::after,
+:before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.contenedor {
+    background-color: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 10000
+}
+
+.loader-container {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto
+}
+
+.loader-container .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border: solid 4px transparent;
+    border-top-color: #0A9444;
+    border-left-color: #0A9444;
+    border-radius: 50%;
+    animation: loader 1.4s linear infinite
+}
+
+.loader-container .loader2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 70%;
+    border: solid 4px transparent;
+    border-top-color: #ffffff;
+    border-left-color: #ffffff;
+    border-radius: 50%;
+    animation: loader2 1.2s linear infinite
+}
+
+.loader-container .img-load {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    animation: loader 1.8s step-end infinite
+}
+
+@keyframes loader {
+    0% {
+        transform: translate(-50%, -50%) rotate(0)
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg)
+    }
+}
+
+@keyframes loader2 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0)
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg)
+    }
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf)
+}
+
+body {
+    font-family: Montserrat;
+    font-size: 100%;
+    padding: 0;
+	margin: 0;
+	margin-left: var(--width-collapsed);
+    transition: ease 0.3s;
+}
+
+.redes {
+    color: #fff
+}
+
+.redes:hover {
+    color: #87c0f5
+}
+
+.btn-block {
+    display: block;
+    width: 100%
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.file .titulo {
+    
+    color: #000;
+}
+
+.file {
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+    width: 90px;
+    height: 110px;
+    background-color: #eee;
+    -webkit-border-radius: 5px;
+    -webkit-box-shadow: 0px 3px 0px #1a71a9
+}
+
+.btn_foto {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file:hover{
+    background-color: #ccc;
+}
+
+.thumb {
+    height: 110px;
+    width: 90px;
+    border: 1px solid #1a71a9;
+    border-bottom: 2px solid #1a71a9;
+    margin: 10px 5px 0 0;
+}
+
+.neumorph {
+    background: #f8f9fa;
+    box-shadow:  20px 20px 60px #abacad,
+                -20px -20px 60px #ffffff;
+}
+
+.neumorph-card {
+    border-radius: 75px 0;
+    background: #f8f9fa;
+    box-shadow:  5px 5px 21px #abacad,
+                -5px -5px 21px #ffffff;
+}
+
+.custom-shadow {
+    -webkit-box-shadow: 5px 5px 20px -7px rgba(0,0,0,0.35); 
+    box-shadow: 5px 5px 20px -7px rgba(0,0,0,0.35);
+}
+
+span.input-group-text {
+    background-color: $color-light;
+}
+
+div.input-group>input, select.form-select {
+    border-left: 0;
+}

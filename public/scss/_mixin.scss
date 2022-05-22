@@ -1,0 +1,4 @@
+@mixin bg-degradado($color1, $color2, $color3, $color4, $grados1, $grados2, $grados3, $grados4){
+    background: $color1;
+    background: linear-gradient(0deg, $color1 $grados1, $color2 $grados2, $color3 $grados3, $color4 $grados4);
+}

@@ -1,0 +1,9 @@
+@use 'sass:math';
+@import '_variables.scss';
+@import '_mixin.scss';
+@import '_extencion.scss';
+@import '_globals.scss';
+@import '_header.scss';
+@import '_sidebar.scss';
+@import '_footer.scss';
+// sass --watch public/scss/styles.scss public/css/styles.css

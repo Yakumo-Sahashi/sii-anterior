@@ -1,0 +1,12 @@
+.bg-header{
+    @include bg-degradado($color-primary, $color-primary, $color-primary-2, $color-primary-2, 0%, 30%, 70%, 100%);
+    .img-educacion{
+        height: $img-size;
+    }
+    .img-tecnm{
+        height: $img-size;
+    }
+    .img-itma{
+        height: math.div($img-size * 90%, 100%);
+    }
+}
